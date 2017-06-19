@@ -7,6 +7,8 @@ class SRF04():
 		self.trig = trig
 		self.echo = echo
 
+		GPIO.setmode(GPIO.BOARD)
+
 		# Set pins as output and input
 		GPIO.setup(self.trig, GPIO.OUT)  # Trigger
 		GPIO.setup(self.echo, GPIO.IN)      # Echo
